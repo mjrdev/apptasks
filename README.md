@@ -4,8 +4,11 @@
 ##### Futuras adições:
 
 > Número de Tarefas
+
 > Hora de execução da tarefa
+
 > Controle diário
+
 > Guardar LocalStorage
 
 
