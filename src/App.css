@@ -1,51 +1,49 @@
 .App {
-  background-color: #fff;
-  display: flex; justify-content: center; align-content: center;
-  height: 100vh; width: 100vw;
+  background-color: rgb(242, 242, 242);
+  display: flex; justify-content: center; align-content: center; align-items: center;
+  height: 100vh;
 }
 
 .content {
-  height: 100vh; width: 60vw;
+  height: 80vh; width: 60vw;
   display: grid;
   justify-content: center;
   align-content: center;
   grid-template-columns: 1.5fr 2fr;
-  grid-template-rows: 50vh 50vh;
+  grid-template-rows: 100vh;
   grid-template-areas:
+  "controls tasks"
   "controls tasks";
   box-shadow: 3px 3px 50px rgb(189, 189, 189);
+  padding: 2rem;
 }
 
 
 .controlls {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin: 2em;
-}
-
-.title {
-} .title>h1 {
-    text-align: center;
-    color: rgb(41, 41, 41);
-}
-
-.controlls>input {
-    width: 85%; height: 2rem;
-    background-color: rgb(203, 203, 203);
-    border: none;
-    color: rgb(41, 41, 41);
-}
-
-.controlls>button {
-  width: 35%;
-  background-color: rgb(48, 221, 80);
-  cursor: pointer;
-  border: none;
-  height: 2rem;
+  align-self: center; justify-self: center;
 }
 
 .tasks {
-  margin-bottom: 10rem;
+  height: 80vh;
+  overflow-y: scroll;
+  align-self: center;
+}
+
+.tasks::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 3pt;
+}
+
+.tasks::-webkit-scrollbar-track {
+background: #ebebeb;
+}
+
+/* Handle */
+.tasks::-webkit-scrollbar-thumb {
+background: #888;
+}
+
+/* Handle on hover */
+.tasks::-webkit-scrollbar-thumb:hover {
+background: #555;
 }
