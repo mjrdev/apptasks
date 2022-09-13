@@ -12,6 +12,13 @@
   font-size: 17pt;
 }
 
+.edit-input {
+  width: 40%;
+  align-self: center;
+  background-color: rgba(200, 200, 200, 0.0);
+  border: 1px solid rgb(177, 177, 177)
+}
+
 .btns {
   display: flex; justify-content: center; gap: 1rem;
 }
@@ -27,7 +34,10 @@
   background-color: rgb(238, 58, 52);
 }
 .btn-ed {
-  background-color: rgb(56, 151, 228);
+  background-color: rgb(48, 142, 220);
+}
+.btn-ed-conf {
+  background-color: rgb(56, 176, 228);
 }
 .btn-co {
   background-color: rgb(234, 141, 34)

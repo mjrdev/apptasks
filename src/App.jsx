@@ -4,7 +4,7 @@ import Controlls from './components/Controlls'
 
 import { useState } from 'react'
 
-import date from './date'
+import date from './packages/date'
 
 const tasksList = [
   {
@@ -30,7 +30,11 @@ function App() {
 
   function completeTask(index) {
     tasks[index].completed = !tasks[index].completed
-    console.log(tasks)
+    setTasks([...tasks])
+  }
+
+  function updateTask(index, mod) {
+    tasks[index].content = mod
     setTasks([...tasks])
   }
 
@@ -44,7 +48,7 @@ function App() {
 
         <div className='tasks'>
             {tasks.map((task, index, t) => {
-              return <Task index={index} data={task} rmTask={rmTask} completeTask={completeTask}/>
+              return <Task index={index} data={task} rmTask={rmTask} completeTask={completeTask} updateTask={updateTask}/>
             })}
         </div>
       </div>

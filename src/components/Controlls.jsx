@@ -2,7 +2,7 @@
 import './Controlls.css'
 import { useState } from 'react'
 
-import date from '../date'
+import date from '../packages/date'
 
 function Controlls(props) {
 
