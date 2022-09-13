@@ -23,12 +23,22 @@
     grid-template-columns: 1fr 1fr;
     width: 95vw;
   }
+
 }
 
 @media only screen and (max-width: 800px) {
   .content {
     display: flex; flex-direction: column;
     padding: 1em 0;
+    width: 100vw; height: 100vh;
+  }
+
+  .controlls {
+    padding: 1em;
+  }
+
+  .tasks {
+    border-top: 1px solid rgb(227, 227, 227);
   }
 }
 
