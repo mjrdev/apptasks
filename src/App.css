@@ -17,6 +17,21 @@
   box-shadow: 3px 3px 50px rgb(189, 189, 189);
 }
 
+@media only screen and (max-width: 1150px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .content {
+    display: flex; flex-direction: column;
+    padding: 1em 0;
+  }
+}
+
 
 .controlls {
   align-self: center; justify-self: center;

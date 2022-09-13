@@ -8,7 +8,7 @@ import date from './packages/date'
 
 const tasksList = [
   {
-      content: 'Tarefa Example',
+      content: 'Exemplo de Tarefa',
       date: date(),
       completed: false
   }

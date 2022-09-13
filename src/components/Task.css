@@ -30,6 +30,12 @@
   color: #fff;
 }
 
+@media only screen and (max-width: 1150px) and (min-width: 801px) {
+  .btns>button {
+    width: 35%;
+  }
+}
+
 .btn-rm {
   background-color: rgb(238, 58, 52);
 }
